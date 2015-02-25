@@ -1,0 +1,16 @@
+n = input("Enter the number: ")
+n = int(n)
+
+number = n
+single = 0
+reverse = 0
+
+while number != 0:
+    single = number % 10
+    reverse = reverse *10 + single
+    number = number // 10
+
+if reverse == n:
+    print("The number %d is palindrom" % n)
+else:
+    print("The number %d is not palindrom" % n)
