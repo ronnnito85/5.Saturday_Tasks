@@ -1,0 +1,45 @@
+from random import randint
+
+point_M = 1001
+point_I = 1001
+
+while True:
+
+    count1 = 1
+
+    sumM = 0
+    sumI = 0
+    
+    while count1 <= 5:
+        p1=randint(1,6)
+        p2=randint(1,6)
+        sumM += p1
+        sumI += p2
+        count1 += 1
+     
+    if point_M > 0:
+        point_M -= sumM
+    elif point_M < 0:
+        point_M += sumM
+        
+    if point_I > 0:
+        point_I -= sumI
+    elif point_I < 0:
+        point_I += sumI
+        
+    print("Maria roll %d and her result is %d" % (sumM, point_M,),
+          "Ivo roll %d and him result is %d" %(sumI, point_I))
+        
+    if point_M == 0:
+        print("Mara is Winner")
+        break
+    
+    if point_I == 0:
+        print("Ivo is Winner")
+        break
+    
+
+    
+
+
+
