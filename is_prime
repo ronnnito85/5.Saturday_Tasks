@@ -1,10 +1,10 @@
 n = input("Enter the number: ")
 n = int(n)
 
-count = 2
+count = 3
 
 if n == 1:
-    print("The number %d is prime" % n)
+    print("The number %d is not prime" % n)
 elif n != 1:
     while count < n:
         digit = n % count
