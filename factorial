@@ -1,0 +1,10 @@
+n = input("Enter the number: ")
+n = int(n)
+
+digit  = 1
+coun = 1
+while coun <= n:
+    digit *= coun
+    coun += 1
+    
+print(" %d! = %d" % (n,digit))
