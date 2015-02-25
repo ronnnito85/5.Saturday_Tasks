@@ -1,0 +1,10 @@
+n = input("Enter number 1: ")
+n = int(n)
+a = 0
+sum1 = 0
+while n != 0:
+    a = n % 10
+    sum1 += a
+    n = n // 10
+print("The sum of all numbers is %d" % sum1)
+    
