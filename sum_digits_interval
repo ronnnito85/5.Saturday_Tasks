@@ -1,0 +1,24 @@
+N = input("Enter number 1: ")
+N = int(N)
+K = input("Enter number 2: ")
+K = int(K)
+
+
+if N > K:
+    n = K
+    k =N
+else:
+    n = N
+    k = K
+
+a = 0
+
+while n <= k:
+    res = n
+    sum1 = 0
+    while res != 0:
+        a = res % 10
+        sum1 += a
+        res = res //10
+    print ("Sum of digits of %d is % d" % (n,sum1))
+    n += 1
